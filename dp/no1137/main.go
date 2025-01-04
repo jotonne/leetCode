@@ -25,3 +25,9 @@ func tribonacci(n int) int {
 	fmt.Println(ns)
 	return ns[n]
 }
+
+// これでよかった
+// for i:= 3 ; i<=n ; i++ {
+// 	tmp = tmp_arr[0] + tmp_arr[1] + tmp_arr[2]
+// 	tmp_arr[0] , tmp_arr[1], tmp_arr[2] = tmp_arr[1] , tmp_arr[2], tmp
+// }
