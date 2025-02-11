@@ -12,9 +12,6 @@ func main() {
 }
 
 func findKthLargest(nums []int, k int) int {
-	if len(nums) == 1 {
-		return nums[0]
-	}
 
 	var h Intheap = Intheap(nums)
 	heap.Init(&h)
@@ -28,7 +25,7 @@ func findKthLargest(nums []int, k int) int {
 		x = heap.Pop(&h).(int)
 		count--
 	}
-	return -1
+	return x
 }
 
 type Intheap []int
